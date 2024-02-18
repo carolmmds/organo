@@ -1,0 +1,27 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    width: 100%;
+    height: auto; /*altura ajustada automaticamente*/
+    overflow: hidden;/*garante que não haja espaços em branco extras*/
+}
+
+.banner img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Adicione uma media query para ajustar o tamanho da imagem em telas menores 
+Quando a largura da tela for 1076px ou menos, a altura da imagem será ajustada automaticamente 
+para manter a proporção, e a largura máxima será definida como 100%. 
+*/
+@media (max-width: 1076px) {
+    .banner img {
+        height: auto;
+        max-width: 100%;
+    }
+}
